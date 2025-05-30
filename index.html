@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
@@ -13,7 +14,7 @@
       color: #333;
     }
     header {
-      background-color: #a40000;
+      background-color: #006400;
       color: white;
       padding: 20px;
       text-align: center;
@@ -24,7 +25,7 @@
       padding: 20px;
     }
     h2 {
-      color: #006400;
+      color: #a40000;
       margin-top: 40px;
     }
     .products {
@@ -69,7 +70,7 @@
       border-radius: 5px;
     }
     form button {
-      background-color: #006400;
+      background-color: #a40000;
       color: white;
       padding: 10px 20px;
       border: none;
@@ -93,8 +94,12 @@
       background-color: #a40000;
       color: white;
       text-align: center;
-      padding: 10px;
+      padding: 20px;
       margin-top: 40px;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -108,53 +113,53 @@
   <h2>محصولات</h2>
   <div class="products">
     <div class="product-card">
-      <img src="https://via.placeholder.com/300x150?text=زرشک" alt="زرشک">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Barberries.jpg" alt="زرشک">
       <h3>زرشک</h3>
       <p>۵۵۰ هزار تومان</p>
     </div>
     <div class="product-card">
-      <img src="https://via.placeholder.com/300x150?text=زعفران" alt="زعفران">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Saffron_Crop.jpg" alt="زعفران">
       <h3>زعفران نیم مثقال</h3>
       <p>۳۰۰ هزار تومان</p>
     </div>
     <div class="product-card">
-      <img src="https://via.placeholder.com/300x150?text=گردو" alt="گردو">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Walnuts_-_whole_and_split.jpg" alt="گردو">
       <h3>گردو</h3>
       <p>۵۹۰ هزار تومان</p>
     </div>
     <div class="product-card">
-      <img src="https://via.placeholder.com/300x150?text=عناب" alt="عناب">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Jujube_fruits.jpg" alt="عناب">
       <h3>عناب ریز</h3>
       <p>۱۸۰ هزار تومان</p>
     </div>
     <div class="product-card">
-      <img src="https://via.placeholder.com/300x150?text=عناب" alt="عناب">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Jujube_fruits.jpg" alt="عناب">
       <h3>عناب متوسط</h3>
       <p>۲۹۵ هزار تومان</p>
     </div>
     <div class="product-card">
-      <img src="https://via.placeholder.com/300x150?text=عناب" alt="عناب">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Jujube_fruits.jpg" alt="عناب">
       <h3>عناب درشت</h3>
       <p>۴۹۵ هزار تومان</p>
     </div>
     <div class="product-card">
-      <img src="https://via.placeholder.com/300x150?text=کشمش" alt="کشمش">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Raisin_variety.jpg" alt="کشمش">
       <h3>کشمش</h3>
       <p>۱۹۰ هزار تومان</p>
     </div>
     <div class="product-card">
-      <img src="https://via.placeholder.com/300x150?text=آلو" alt="آلو">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Prunes_in_bowl.jpg" alt="آلو">
       <h3>آلو</h3>
       <p>۲۲۰ هزار تومان</p>
     </div>
     <div class="product-card">
-      <img src="https://via.placeholder.com/300x150?text=گردو+دندانه" alt="گردو دندانه">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Walnuts_-_whole_and_split.jpg" alt="گردو دندانه">
       <h3>گردو دندانه</h3>
       <p>۴۵۰ هزار تومان</p>
     </div>
   </div>
 
-  <h2>سفارش دهید</h2>
+  <h2>ثبت سفارش</h2>
   <form id="orderForm">
     <label for="name">نام شما:</label>
     <input type="text" id="name" required>
@@ -162,8 +167,8 @@
     <label for="phone">شماره تماس:</label>
     <input type="tel" id="phone" required>
 
-    <label for="product">محصول مورد نظر:</label>
-    <select id="product">
+    <label for="products">محصولات مورد نظر (چند مورد را می‌توانید انتخاب کنید):</label>
+    <select id="products" multiple size="6">
       <option value="زرشک">زرشک</option>
       <option value="زعفران نیم مثقال">زعفران نیم مثقال</option>
       <option value="گردو">گردو</option>
@@ -182,11 +187,12 @@
   </form>
 </div>
 
-<!-- دکمه واتساپ -->
 <a class="whatsapp-button" href="https://wa.me/989124401709" target="_blank">💬 چت واتساپ</a>
 
 <footer>
-  کلیه حقوق این سایت متعلق به خشکبار سید است.
+  <p>سید موسی استانستی</p>
+  <p>تماس با ما: <a href="tel:09124401709">09124401709</a></p>
+  <p>کلیه حقوق این سایت متعلق به خشکبار سید است.</p>
 </footer>
 
 <script>
@@ -194,16 +200,15 @@
     event.preventDefault();
     const name = document.getElementById("name").value;
     const phone = document.getElementById("phone").value;
-    const product = document.getElementById("product").value;
+    const products = Array.from(document.getElementById("products").selectedOptions).map(opt => opt.value).join(", ");
     const notes = document.getElementById("notes").value;
 
     const message = `سفارش جدید:
 
 نام: ${name}
 شماره تماس: ${phone}
-محصول: ${product}
+محصولات: ${products}
 توضیحات: ${notes}`;
-
     const whatsappURL = `https://wa.me/989124401709?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, "_blank");
   });
